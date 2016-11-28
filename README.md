@@ -3,6 +3,7 @@
 - app2 - take a name, change name - command line version
 - app3 - bot framework version, no id/password yet
 - app4 - LUIS test
+- app5 - 
 
 #### Plans
 - finish dialogue, clear name and data

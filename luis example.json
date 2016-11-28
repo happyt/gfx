@@ -1,0 +1,132 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "gfx",
+  "desc": "Make graphics",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Graphic"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "SaveTo"
+    },
+    {
+      "name": "TeamA",
+      "children": [
+        "PlayerA"
+      ]
+    },
+    {
+      "name": "TeamB",
+      "children": [
+        "PlayerB"
+      ]
+    },
+    {
+      "name": "Template"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [],
+  "actions": [
+    {
+      "actionName": "Graphic",
+      "intentName": "Graphic",
+      "channel": null,
+      "actionParameters": [
+        {
+          "parameterName": "PlayerA",
+          "entityName": "TeamA::PlayerA",
+          "required": true,
+          "question": "Which is the first player",
+          "phraseListFeatureName": null
+        },
+        {
+          "parameterName": "PlayerB",
+          "entityName": "TeamB::PlayerB",
+          "required": true,
+          "question": "Which is the second player?",
+          "phraseListFeatureName": null
+        },
+        {
+          "parameterName": "Template",
+          "entityName": "Template",
+          "required": true,
+          "question": "What template to use",
+          "phraseListFeatureName": null
+        },
+        {
+          "parameterName": "Page",
+          "entityName": "SaveTo",
+          "required": true,
+          "question": "Which page to save to",
+          "phraseListFeatureName": null
+        }
+      ]
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "make a graphic",
+      "intent": "Graphic",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "gfx",
+      "intent": "Graphic",
+      "entities": []
+    },
+    {
+      "text": "graphic",
+      "intent": "Graphic",
+      "entities": []
+    },
+    {
+      "text": "gra",
+      "intent": "Graphic",
+      "entities": []
+    },
+    {
+      "text": "compare stats",
+      "intent": "Graphic",
+      "entities": []
+    },
+    {
+      "text": "ice cream",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "pudding",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "template 1234",
+      "intent": "Graphic",
+      "entities": []
+    },
+    {
+      "text": "graphic 2345",
+      "intent": "Graphic",
+      "entities": []
+    },
+    {
+      "text": "template 1234, playera vardy",
+      "intent": "Graphic",
+      "entities": []
+    }
+  ]
+}
