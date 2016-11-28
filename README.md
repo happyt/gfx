@@ -2,9 +2,10 @@
 - app1 - runs the botapi, test with bot framework emulator locally
 - app2 - take a name, change name - command line version
 - app3 - bot framework version, no id/password yet
-- app4 - finish dialogue, clear name and data
+- app4 - LUIS test
 
 #### Plans
+- finish dialogue, clear name and data
 - show summary list, who involved
 - complex conversation with data
 - firebase memory of personal info ?
